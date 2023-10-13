@@ -31,7 +31,7 @@ export function useJson() {
 
       setCompleteJson(json);
 
-      jsonName.current.value = e.target.files[0].name;
+      jsonName.current.value = `${e.target.files[0].name} - ${e.target.files[0].size}`;
     } catch {
       setJsonIsError(true);
     }
