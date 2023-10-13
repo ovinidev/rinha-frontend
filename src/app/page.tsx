@@ -22,9 +22,11 @@ export default function Home() {
       <section className="flex w-[65rem] flex-col items-center space-y-6 px-8">
         {Object.values(jsonView).length === 0 ? (
           <>
-            <h1 className="text-5xl font-bold text-black">JSON Tree Viewer</h1>
+            <h1 className="text-3xl: font-bold text-black lg:text-5xl">
+              JSON Tree Viewer
+            </h1>
 
-            <p className="text-2xl font-normal">
+            <p className="text-xl font-normal lg:text-2xl">
               Simple JSON Viewer that runs completely on-client. No data
               exchange{" "}
             </p>
