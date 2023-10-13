@@ -22,7 +22,7 @@ export default function Home() {
       <section className="flex w-[65rem] flex-col items-center space-y-6 px-8">
         {Object.values(jsonView).length === 0 ? (
           <>
-            <h1 className="text-3xl: font-bold text-black lg:text-5xl">
+            <h1 className="text-3xl font-bold text-black lg:text-5xl">
               JSON Tree Viewer
             </h1>
 
