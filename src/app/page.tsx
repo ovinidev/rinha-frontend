@@ -1,8 +1,9 @@
 "use client";
-import { ReactJson } from "@components/ReactJson";
-import { Pagination } from "@components/Pagination";
 import { InputJson } from "@components/InputJson";
 import { useJson } from "@hooks/useJson";
+import dynamic from "next/dynamic";
+const ReactJson = dynamic(() => import("@components/ReactJson"));
+const Pagination = dynamic(() => import("@components/Pagination"));
 
 export default function Home() {
   const {

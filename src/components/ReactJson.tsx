@@ -5,7 +5,7 @@ interface ReactJsonProps {
   data: object;
 }
 
-export function ReactJson({ data }: ReactJsonProps) {
+export default function ReactJson({ data }: ReactJsonProps) {
   return (
     <ReactJsonView
       src={data}

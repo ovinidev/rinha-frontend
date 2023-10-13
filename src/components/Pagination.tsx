@@ -10,7 +10,7 @@ interface PaginationProps {
   page: number;
 }
 
-export function Pagination({
+export default function Pagination({
   handlePrevPage,
   handleNextPage,
   page,

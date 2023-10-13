@@ -28,7 +28,9 @@ export function useJson() {
     try {
       const jsonBrute = await parseJsonFile(e.target.files[0]);
       const json = formatJson(jsonBrute);
+
       setCompleteJson(json);
+
       jsonName.current.value = e.target.files[0].name;
     } catch {
       setJsonIsError(true);
